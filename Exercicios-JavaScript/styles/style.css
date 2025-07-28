@@ -1,0 +1,339 @@
+/* =================================
+   ESTILOS GERAIS DA PÁGINA
+   ================================= */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* =================================
+   ESTILOS ESPECÍFICOS DOS EXERCÍCIOS
+   ================================= */
+
+/* --- Exercício 2: Mudar a cor de fundo --- */
+#caixaColorida {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* --- Exercício 4: Remover item de uma lista --- */
+.botaoRemover {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #dc3545; /* Vermelho para indicar perigo/remoção */
+}
+.botaoRemover:hover {
+    background-color: #c82333;
+}
+
+/* --- Exercício 5: Alternar visibilidade --- */
+.oculto {
+    display: none;
+}
+
+/* --- Exercício 6: Validar formulário --- */
+.erro {
+    color: #dc3545;
+    font-size: 0.9em;
+    height: 1.2em; /* Garante espaço para não "pular" o layout */
+}
+input.invalido {
+    border: 2px solid #dc3545;
+    background-color: #fff8f8;
+}
+label {
+    margin-right: 10px;
+}
+
+/* --- Exercício 9: Mover elemento --- */
+.container-movel {
+    height: 150px;
+    width: 100%;
+    border: 1px dashed #ccc;
+    position: relative; /* Contexto de posicionamento para o elemento movível */
+    margin-bottom: 10px;
+}
+
+#elementoMovivel {
+    width: 50px;
+    height: 50px;
+    background-color: seagreen;
+    position: absolute; /* Posição absoluta relativa ao .container-movel */
+    top: 0;
+    left: 0;
+    transition: all 0.2s linear;
+}
+.controles button {
+    margin-right: 5px;
+}
+
+/* --- Exercício 10: Pop-up Modal --- */
+.modal-container {
+    display: none;
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1000; /* Garante que fique sobre todos os outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* Fundo preto com opacidade */
+    display: none; /* Começa oculto */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.visivel {
+    display: flex; /* Muda para flex para centralizar o conteúdo */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: animarModal 0.4s ease-out;
+}
+
+.fechar-modal {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animação simples para o modal aparecer */
+@keyframes animarModal {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}/* =================================
+   ESTILOS GERAIS DA PÁGINA
+   ================================= */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* =================================
+   ESTILOS ESPECÍFICOS DOS EXERCÍCIOS
+   ================================= */
+
+/* --- Exercício 2: Mudar a cor de fundo --- */
+#caixaColorida {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* --- Exercício 4: Remover item de uma lista --- */
+.botaoRemover {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #dc3545; /* Vermelho para indicar perigo/remoção */
+}
+.botaoRemover:hover {
+    background-color: #c82333;
+}
+
+/* --- Exercício 5: Alternar visibilidade --- */
+.oculto {
+    display: none;
+}
+
+/* --- Exercício 6: Validar formulário --- */
+.erro {
+    color: #dc3545;
+    font-size: 0.9em;
+    height: 1.2em; /* Garante espaço para não "pular" o layout */
+}
+input.invalido {
+    border: 2px solid #dc3545;
+    background-color: #fff8f8;
+}
+label {
+    margin-right: 10px;
+}
+
+/* --- Exercício 9: Mover elemento --- */
+.container-movel {
+    height: 150px;
+    width: 100%;
+    border: 1px dashed #ccc;
+    position: relative; /* Contexto de posicionamento para o elemento movível */
+    margin-bottom: 10px;
+}
+
+#elementoMovivel {
+    width: 50px;
+    height: 50px;
+    background-color: seagreen;
+    position: absolute; /* Posição absoluta relativa ao .container-movel */
+    top: 0;
+    left: 0;
+    transition: all 0.2s linear;
+}
+.controles button {
+    margin-right: 5px;
+}
+
+/* --- Exercício 10: Pop-up Modal --- */
+.modal-container {
+    display: none;
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1000; /* Garante que fique sobre todos os outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* Fundo preto com opacidade */
+    display: none; /* Começa oculto */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.visivel {
+    display: flex; /* Muda para flex para centralizar o conteúdo */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: animarModal 0.4s ease-out;
+}
+
+.fechar-modal {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animação simples para o modal aparecer */
+@keyframes animarModal {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

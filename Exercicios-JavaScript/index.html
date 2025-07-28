@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Manipulação do DOM</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<h1>Exercícios de JavaScript e DOM</h1>
+
+<section>
+    <h2>1. Alterar o texto de um elemento HTML</h2>
+    <p id="paragrafoExemplo">Este é o texto original.</p>
+    <button id="botaoMudarTexto">Mudar Texto</button>
+</section>
+<section>
+    <h2>2. Mudar a cor de fundo de um elemento</h2>
+    <div id="caixaColorida">Passe o mouse sobre mim!</div>
+</section>
+
+<section>
+    <h2>3. Adicionar um novo item a uma lista</h2>
+    <ul id="minhaLista">
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+    </ul>
+    <button id="botaoAdicionar">Adicionar Item</button>
+</section>
+<section>
+    <h2>4. Remover um item de uma lista</h2>
+    <ul id="listaRemovivel">
+        <li>Item 1 <button class="botaoRemover">Remover</button></li>
+        <li>Item 2 <button class="botaoRemover">Remover</button></li>
+        <li>Item 3 <button class="botaoRemover">Remover</button></li>
+    </ul>
+</section>
+<section>
+    <h2>5. Alternar a visibilidade de um elemento</h2>
+    <div id="elementoVisivel">Eu sou um elemento que pode ser escondido.</div>
+    <button id="botaoAlternar">Alternar Visibilidade</button>
+</section>
+<section>
+    <h2>6. Validar um formulário de entrada</h2>
+    <form id="meuFormulario" novalidate>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="exemplo@dominio.com">
+        <button type="submit">Enviar</button>
+        <p id="erroEmail" class="erro"></p>
+    </form>
+</section>
+
+<section>
+    <h2>7. Alterar a imagem ao passar o mouse</h2>
+    <img id="imagemDinamica" src="images/imagem_original.jpg" alt="Imagem original" width="150">
+</section>
+<section>
+    <h2>8. Criar um contador de cliques</h2>
+    <p>Número de cliques: <span id="contador">0</span></p>
+    <button id="botaoContador">Clique Aqui</button>
+</section>
+<section>
+    <h2>9. Fazer um elemento se mover na tela</h2>
+    <div class="container-movel">
+        <div id="elementoMovivel"></div>
+    </div>
+    <div class="controles">
+        <button id="btnCima">Cima</button>
+        <button id="btnBaixo">Baixo</button>
+        <button id="btnEsquerda">Esquerda</button>
+        <button id="btnDireita">Direita</button>
+    </div>
+</section>
+<section>
+    <h2>10. Criar um pop-up modal</h2>
+    <button id="abrirModal">Abrir Pop-up</button>
+</section>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <span class="fechar-modal">&times;</span>
+        <h2>Este é um Modal</h2>
+        <p>Este é o conteúdo do meu pop-up modal. Ele pode conter qualquer coisa, como formulários, imagens ou informações importantes.</p>
+        <p>Clique no X ou fora para fechar essa caixa.</p>
+    </div>
+</div>
+
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
